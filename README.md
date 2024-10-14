@@ -1,2 +1,0 @@
-# ARXP
-Augmented Reality Experience
