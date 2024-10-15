@@ -13,7 +13,6 @@ import { SharedComponentsModule } from '../shared-components/shared-components.m
     AppComponent,
     LoginPageComponent,
     DashboardPageComponent,
-    ToolbarComponent
   ],
   imports: [
     BrowserModule,
