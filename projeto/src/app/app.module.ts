@@ -7,6 +7,9 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
 import { ToolbarComponent } from '../shared-components/toolbar/toolbar.component';
 import { SharedComponentsModule } from '../shared-components/shared-components.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { SidebarComponent } from '../shared-components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -17,9 +20,12 @@ import { SharedComponentsModule } from '../shared-components/shared-components.m
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedComponentsModule
+    SharedComponentsModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [
     AppComponent
   ]
