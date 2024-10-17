@@ -1,0 +1,26 @@
+.simple-toolbar
+  display: flex
+  align-items: center
+  background-color: #3f51b5 // Cor de fundo inicial
+  padding: 0 16px // Padding horizontal
+  height: 60px // Altura da toolbar
+  transition: background-color 0.3s ease // Transição suave para a cor de fundo
+
+  .toolbar-title
+    flex: 1 // Faz com que o título ocupe o espaço disponível
+    color: white // Cor do texto
+    font-weight: bold // Negrito para o título
+
+  .spacer
+    flex: 1 // Cria um espaço flexível entre o título e os ícones à direita
+
+  .toolbar-icon
+    background: none // Remove o fundo do botão
+    border: none // Remove a borda do botão
+    color: white // Cor dos ícones
+    cursor: pointer // Muda o cursor ao passar o mouse sobre o botão
+    margin-left: 10px // Espaçamento entre os ícones
+    transition: color 0.3s ease // Transição suave para a cor do ícone
+
+    &:hover
+      color: rgba(255, 255, 255, 0.7) // Efeito de escurecimento no hover
