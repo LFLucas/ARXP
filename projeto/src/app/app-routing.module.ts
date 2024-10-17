@@ -6,7 +6,7 @@ import { RegisterComponent } from './dashboard-page/register/register-component.
 import { RegistryComponent } from './dashboard-page/registry/registry-component.component';
 
 const routes: Routes = [
-  { path: "", redirectTo: "dashboard", pathMatch: "full"},
+  { path: "", redirectTo: "login", pathMatch: "full"},
   { path: "login", component: LoginPageComponent},
 
   { path: "dashboard", component: DashboardPageComponent, children: [
